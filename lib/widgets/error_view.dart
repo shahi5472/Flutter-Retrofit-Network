@@ -12,24 +12,26 @@ class ErrorView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      mainAxisSize: MainAxisSize.min,
-      mainAxisAlignment: MainAxisAlignment.center,
-      children: [
-        Center(
-          child: Text(
-            text,
-            style: const TextStyle(color: Colors.red),
+    return Center(
+      child: Column(
+        mainAxisSize: MainAxisSize.min,
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          Center(
+            child: Text(
+              text,
+              style: const TextStyle(color: Colors.red),
+            ),
           ),
-        ),
-        const SizedBox(height: 20),
-        Flexible(
-          child: ElevatedButton(
-            onPressed: onPressed,
-            child: const Text('Retry'),
+          const SizedBox(height: 20),
+          Flexible(
+            child: ElevatedButton(
+              onPressed: onPressed,
+              child: const Text('Retry'),
+            ),
           ),
-        ),
-      ],
+        ],
+      ),
     );
   }
 }
