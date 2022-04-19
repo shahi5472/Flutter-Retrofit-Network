@@ -9,7 +9,12 @@ class HomeController extends GetxController {
   RxString errorMessage = "".obs;
   RxList<UserModel> userList = <UserModel>[].obs;
 
-  Future<void> retry() => _getUserList();
+  Future<void> retry() async {
+    _getUserList();
+    isLoading(true);
+    isError(false);
+    errorMessage("");
+  }
 
   @override
   void onInit() {
