@@ -2,7 +2,7 @@ import 'package:dio/dio.dart';
 import 'package:flutter_retrofit_network/data/post_model.dart';
 import 'package:retrofit/http.dart';
 
-import '../data/user_model.dart';
+import '../../data/user_model.dart';
 
 part 'api_client.g.dart';
 

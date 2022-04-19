@@ -10,6 +10,8 @@ class PostController extends GetxController {
   RxString errorMessage = "".obs;
   RxList<PostModel> postList = <PostModel>[].obs;
 
+  Future<void> retry() => _getPostList();
+
   @override
   void onInit() {
     _getPostList();

@@ -18,6 +18,7 @@ class MyApp extends StatelessWidget {
       getPages: AppPages.routes,
       theme: ThemeData(primarySwatch: Colors.blue),
       debugShowCheckedModeBanner: false,
+      defaultTransition: Transition.zoom,
     );
   }
 }

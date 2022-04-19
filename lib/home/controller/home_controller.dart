@@ -9,13 +9,15 @@ class HomeController extends GetxController {
   RxString errorMessage = "".obs;
   RxList<UserModel> userList = <UserModel>[].obs;
 
+  Future<void> retry() => _getUserList();
+
   @override
   void onInit() {
     _getUserList();
     super.onInit();
   }
 
-  void _getUserList() async {
+  Future<void> _getUserList() async {
     ApiResponseModel result = await ApiService.instance.getUserList();
     if (result.error) {
       errorMessage(result.message!);

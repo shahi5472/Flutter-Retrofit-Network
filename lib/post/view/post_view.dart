@@ -18,7 +18,10 @@ class PostView extends GetView<PostController> {
         body: controller.isLoading.value
             ? const Loading()
             : controller.isError.value
-                ? ErrorView(text: controller.errorMessage.value.toString())
+                ? ErrorView(
+                    text: controller.errorMessage.value.toString(),
+                    onPressed: () => controller.retry(),
+                  )
                 : ListView.builder(
                     shrinkWrap: true,
                     itemCount: controller.postList.length,

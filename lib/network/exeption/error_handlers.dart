@@ -58,6 +58,8 @@ class ErrorHandlers {
         }
       } on FormatException catch (_) {
         return "Format Exception";
+      } on SocketException catch (_) {
+        return "No Internet Connection";
       } catch (_) {
         return "Unexpected Error";
       }
