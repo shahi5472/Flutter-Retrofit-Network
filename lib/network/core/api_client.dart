@@ -10,8 +10,8 @@ part 'api_client.g.dart';
 abstract class ApiClient {
   factory ApiClient(Dio dio, {String? baseUrl}) {
     dio.options = BaseOptions(
-      receiveTimeout: 30000,
-      connectTimeout: 30000,
+      receiveTimeout: const Duration(seconds: 20).inMilliseconds,
+      connectTimeout: const Duration(seconds: 20).inMilliseconds,
       contentType: 'application/json',
     );
     return _ApiClient(dio, baseUrl: baseUrl);

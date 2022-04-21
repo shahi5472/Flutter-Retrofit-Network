@@ -38,6 +38,8 @@ dependencies:
   dio: ^4.0.6
   get: ^4.6.1
   connectivity_plus: ^2.3.0
+  flutter_alice: ^1.0.2
+  overlay_support: ^1.2.1
 
 dev_dependencies:
   flutter_test:
