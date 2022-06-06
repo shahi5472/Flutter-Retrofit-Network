@@ -5,10 +5,14 @@ class RetryInterceptor extends InterceptorsWrapper {
 
   RetryInterceptor(this._dio);
 
-  final accessToken = "your access token";
+  String get accessToken => "your access token";
 
   @override
   void onRequest(RequestOptions options, RequestInterceptorHandler handler) {
+    options.headers = {
+      'Test': 'Test Header Value',
+      'Authorization' : 'Bearer $accessToken'
+    };
     super.onRequest(options, handler);
   }
 
