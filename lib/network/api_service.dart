@@ -2,13 +2,12 @@ import 'package:flutter/material.dart';
 import 'package:flutter_retrofit_network/data/items.dart';
 import 'package:flutter_retrofit_network/data/network/api_response_model.dart';
 import 'package:flutter_retrofit_network/network/exeption/error_handlers.dart';
-import 'package:flutter_retrofit_network/network/local_connect.dart';
-import 'package:flutter_retrofit_network/network/net_connect.dart';
+import 'package:flutter_retrofit_network/network/network.dart';
 
 import '../data/post_model.dart';
 import '../data/user_model.dart';
 
-class ApiService extends NetConnect {
+class ApiService extends Network {
   static ApiService get instance => ApiService();
 
   Future<ApiResponseModel> getUserList() async {

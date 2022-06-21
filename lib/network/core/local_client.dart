@@ -31,12 +31,12 @@ class LocalClient implements NetworkMethod {
   }
 
   @override
-  Future<List<PostModel>> getPosts() {
-    throw UnimplementedError();
+  Future<List<PostModel>> getPosts() async {
+    return [];
   }
 
   @override
-  Future<List<UserModel>> getUsers() {
-    throw UnimplementedError();
+  Future<List<UserModel>> getUsers() async {
+    return [];
   }
 }
