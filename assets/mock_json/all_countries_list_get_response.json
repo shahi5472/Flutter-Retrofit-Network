@@ -1,0 +1,47 @@
+{
+  "success": true,
+  "data": {
+    "items": [
+      {
+        "id": 1,
+        "name": "Saudi Arabia"
+      },
+      {
+        "id": 2,
+        "name": "Afghanistan"
+      },
+      {
+        "id": 3,
+        "name": "Algeria"
+      },
+      {
+        "id": 4,
+        "name": "Yemen"
+      },
+      {
+        "id": 5,
+        "name": "United Arab Emirates"
+      },
+      {
+        "id": 6,
+        "name": "United Kingdom"
+      },
+      {
+        "id": 7,
+        "name": "Uzbekistan"
+      },
+      {
+        "id": 8,
+        "name": "Vietnam"
+      },
+      {
+        "id": 9,
+        "name": "Syria"
+      },
+      {
+        "id": 10,
+        "name": "Switzerland"
+      }
+    ]
+  }
+}

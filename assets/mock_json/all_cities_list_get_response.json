@@ -1,0 +1,47 @@
+{
+  "success": true,
+  "data": {
+    "items": [
+      {
+        "id": 1,
+        "name": "City Saudi Arabia"
+      },
+      {
+        "id": 2,
+        "name": "City Afghanistan"
+      },
+      {
+        "id": 3,
+        "name": "City Algeria"
+      },
+      {
+        "id": 4,
+        "name": "City Yemen"
+      },
+      {
+        "id": 5,
+        "name": "City United Arab Emirates"
+      },
+      {
+        "id": 6,
+        "name": "City United Kingdom"
+      },
+      {
+        "id": 7,
+        "name": "City Uzbekistan"
+      },
+      {
+        "id": 8,
+        "name": "City Vietnam"
+      },
+      {
+        "id": 9,
+        "name": "City Syria"
+      },
+      {
+        "id": 10,
+        "name": "City Switzerland"
+      }
+    ]
+  }
+}

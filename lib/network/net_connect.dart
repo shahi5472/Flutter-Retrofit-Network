@@ -1,14 +1,18 @@
 import 'package:dio/dio.dart';
+import 'package:flutter/material.dart';
 import 'package:flutter_alice/alice.dart';
 
 import '../main.dart';
 import 'core/api_client.dart';
 import 'core/interceptor/retry_Interceptor.dart';
 
+///For server api call
 abstract class NetConnect {
   late Dio _dio;
 
-  late ApiClient apiClient;
+  late ApiClient _apiClient;
+
+  ApiClient get client => _apiClient;
 
   late Alice _alice;
 
@@ -21,11 +25,11 @@ abstract class NetConnect {
       responseHeader: true,
       responseBody: true,
       error: true,
-      logPrint: (value) => print('LogInterceptor => $value'),
+      logPrint: (value) => debugPrint('LogInterceptor => $value'),
     ));
     _dio.interceptors.add(RetryInterceptor(_dio));
     _alice = Alice(showNotification: true, navigatorKey: navigatorKey);
     _dio.interceptors.add(_alice.getDioInterceptor());
-    apiClient = ApiClient(_dio);
+    _apiClient = ApiClient(_dio);
   }
 }

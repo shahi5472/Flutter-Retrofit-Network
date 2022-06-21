@@ -17,8 +17,10 @@ class HomeController extends GetxController {
   }
 
   @override
-  void onInit() {
+  void onInit() async{
     _getUserList();
+    ApiResponseModel city = await ApiService.instance.getCityList();
+    ApiResponseModel county = await ApiService.instance.getCountryList();
     super.onInit();
   }
 
